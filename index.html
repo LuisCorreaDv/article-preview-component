@@ -33,9 +33,30 @@
           <p class="author-name">Michelle Appleton</p>
           <p class="author-date">28 Jun 2020</p>
         </div>
-        <button class="share-button">
-          <img src="./images/icon-share.svg" alt="Share">
+        <button class="share-button" id="shareButton">
+          <img src="./images/icon-share.svg" alt="Share" class="share-icon">
         </button>
+      </div>
+      
+      <!-- Barra de compartir que aparece al hacer clic -->
+      <div class="share-bar" id="shareBar">
+        <div class="share-content">
+          <span class="share-text">SHARE</span>
+          <div class="social-icons">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <img src="./images/icon-facebook.svg" alt="Facebook">
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <img src="./images/icon-twitter.svg" alt="Twitter">
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <img src="./images/icon-pinterest.svg" alt="Pinterest">
+            </a>
+          </div>
+          <button class="share-button" id="shareButtonBar">
+            <img src="./images/icon-share.svg" alt="Share" class="share-icon">
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -44,5 +65,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/LuisCorreaDv">Luis Correa</a>.
   </div>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

@@ -120,6 +120,87 @@ body {
     height: 15px;
 }
 
+.share-button.active {
+    background: var(--color-desaturated-dark-blue);
+}
+
+.share-button.active .share-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Share bar */
+.share-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-very-dark-grayish-blue);
+    padding: 20px 30px;
+    border-radius: 0 0 10px 10px;
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.share-bar.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.share-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.share-text {
+    color: var(--color-grayish-blue);
+    font-size: 13px;
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* Adjustments for the card when the share is active */
+.card-content {
+    position: relative;
+    padding: 30px;
+}
+
+.card-author.active {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 /* Attribution */
 .attribution {
     margin-top: 20px;
