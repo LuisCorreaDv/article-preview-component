@@ -1,0 +1,20 @@
+/* Variables de diseño según style-guide.md */
+:root {
+    --color-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --color-desaturated-dark-blue: hsl(214, 17%, 51%);
+    --color-grayish-blue: hsl(212, 23%, 69%);
+    --color-light-grayish-blue: hsl(210, 46%, 95%);
+    --font-family-manrope: 'Manrope', sans-serif;
+    --font-size-body: 13px;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-light-grayish-blue);
+}
