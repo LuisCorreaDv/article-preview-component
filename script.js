@@ -7,7 +7,6 @@ const cardAuthor = document.querySelector('.card-author');
 function toggleShareBar() {
   shareBar.classList.toggle('active');
   shareButton.classList.toggle('active');
-  cardAuthor.classList.toggle('active');
   
   // Si la barra está activa, añadir listener para cerrar al hacer clic fuera
   if (shareBar.classList.contains('active')) {
@@ -23,7 +22,6 @@ function closeShareBar(e) {
   if (!shareBar.contains(e.target) && !shareButton.contains(e.target) && !shareButtonBar.contains(e.target)) {
     shareBar.classList.remove('active');
     shareButton.classList.remove('active');
-    cardAuthor.classList.remove('active');
     document.removeEventListener('click', closeShareBar);
   }
 }

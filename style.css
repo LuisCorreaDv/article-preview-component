@@ -196,11 +196,6 @@ body {
     padding: 30px;
 }
 
-.card-author.active {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
 /* Attribution */
 .attribution {
     margin-top: 20px;
@@ -222,23 +217,49 @@ body {
 @media (min-width: 768px) {
     .card {
         flex-direction: row;
+        overflow: visible;
     }
-    
+
     .card-image {
         width: 285px;
         height: auto;
         flex-shrink: 0;
     }
-    
+
     .card-image img {
         height: 100%;
     }
-    
+
     .card-content {
         padding: 40px;
     }
-    
+
     .card-title {
         font-size: 22px;
     }
+
+    .share-bar {
+        position: absolute;
+        bottom: 35%;
+        right: -16%;
+        left: auto;
+        border-radius: 10px;
+        padding: 20px 40px;
+    }
+
+    .share-bar::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 8px;
+        border-style: solid;
+        border-color: var(--color-very-dark-grayish-blue) transparent transparent transparent;
+    }
+
+    .share-bar button {
+        display: none;
+    }
+
 }
